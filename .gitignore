@@ -1,0 +1,13 @@
+#####Springboot target####
+/target/*
+
+#####Springboot target####
+/allure-results/*
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+
