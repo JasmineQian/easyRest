@@ -16,6 +16,9 @@ import org.testng.annotations.Test;
 
 import java.util.Iterator;
 
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class JasmineTest extends AbstractTestNGSpringContextTests {
 
     // 数据发动机

@@ -3,8 +3,10 @@ package com.example.demo.Core.Abstract;
 import cn.hutool.core.util.StrUtil;
 import com.example.demo.bean.ExecutionData;
 import io.restassured.response.Response;
+import org.springframework.stereotype.Service;
 
 /** 抽象执行集成接口聚合抽象类 */
+@Service
 public abstract class AbstractRestAssuredExecute extends AbstractExecute<Response, ExecutionData> {
 
   // 总执行接口聚合其他接口功能

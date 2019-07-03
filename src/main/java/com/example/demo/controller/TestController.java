@@ -18,7 +18,6 @@ import java.util.Iterator;
 @RestController
 public class TestController {
 
-    private InterfaceExecutionProxy<ExecutionData> executionimp;
 
     // 数据发动机
     @Autowired
@@ -34,7 +33,7 @@ public class TestController {
         for (Iterator<Object[]> it = lists; it.hasNext(); ) {
             Object executionData = it.next();
             System.out.println(executionData.toString());
-            executionimp.execution((ExecutionData)executionData);
+            interfaceExecution.execution((ExecutionData)executionData);
         }
     }
 
@@ -47,6 +46,6 @@ public class TestController {
     @Test(testName = "esayrestTests", dataProvider = "getdata")
     @Step("测试用例名称：{executionData.caseDescription}")
     public void TTTData(ExecutionData executionData) {
-        executionimp.execution(executionData);
+        interfaceExecution.execution(executionData);
     }
 }

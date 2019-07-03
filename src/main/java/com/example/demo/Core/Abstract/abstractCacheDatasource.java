@@ -2,7 +2,9 @@ package com.example.demo.Core.Abstract;
 
 import com.example.demo.Core.Interface.CacheDataSource;
 import com.example.demo.Util.StringReplaceHelper;
+import org.springframework.stereotype.Service;
 
+@Service
 public abstract class abstractCacheDatasource implements CacheDataSource<String> {
 
   private static final String placeholderPrefix = "{";

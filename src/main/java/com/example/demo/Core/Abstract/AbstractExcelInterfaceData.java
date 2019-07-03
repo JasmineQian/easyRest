@@ -2,10 +2,12 @@ package com.example.demo.Core.Abstract;
 
 import com.example.demo.Core.Interface.InterfaceDataProvider;
 import com.example.demo.Enum.DataType;
+import org.springframework.stereotype.Service;
 
 import java.util.Iterator;
 
 /** 抽象实现数据提供接口 */
+@Service
 public abstract class AbstractExcelInterfaceData implements InterfaceDataProvider<Object> {
   /** 文件路径 */
   private String filepath;

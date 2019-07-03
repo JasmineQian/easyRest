@@ -1,8 +1,10 @@
 package com.example.demo.Core.Abstract;
 
 import org.slf4j.Logger;
+import org.springframework.stereotype.Service;
 
 @SuppressWarnings("ALL")
+@Service
 public abstract class abstractsCacheOrAuto extends abstractCacheDatasource {
 
   private static Logger log;

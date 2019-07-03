@@ -8,7 +8,7 @@ import com.example.demo.Core.Abstract.AbstractExcelInterfaceData;
 import com.example.demo.Util.ExcelUtil;
 import com.example.demo.Util.TestNgUtil;
 import com.example.demo.bean.ExecutionData;
-import org.slf4j.Logger;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -16,8 +16,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+@Service
 public class ExcelInterfaceDataProd extends AbstractExcelInterfaceData {
-  private static Logger log;
 
   private static List<Object> excelData = new ArrayList<>();
   private static Iterator<Object[]> objectList = new ArrayList<Object[]>().iterator();

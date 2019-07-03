@@ -4,7 +4,9 @@ import cn.hutool.core.util.StrUtil;
 import com.example.demo.Config.EasyRestConfig;
 import com.example.demo.Core.Interface.InitialConfiguration;
 import org.slf4j.Logger;
+import org.springframework.stereotype.Service;
 
+@Service
 public abstract class AbstractInitialConfiguration implements InitialConfiguration {
   private static Logger log;
 
